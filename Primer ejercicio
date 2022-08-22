@@ -1,0 +1,31 @@
+int Psemestre ;
+int Ssemestre ;
+Console.WriteLine ("Valor del primer semestre:");
+Psemestre = int.Parse(Console.ReadLine());
+Console.WriteLine ("Valor del segundo semestre:");
+Ssemestre = int.Parse(Console.ReadLine());
+int Ranual = Psemestre + Ssemestre;
+
+if (Ranual>=1 && Ranual <10000)
+{Console.WriteLine ("Su renta anual es: " + Ranual + " Su total a pagar es: $" + (Ranual*1.05) + 
+" Su porcentaje de renta a pagar es del 5%");
+}
+else if (Ranual >=10000 && Ranual < 20000){
+    Console.WriteLine("Su renta anual es: " + Ranual + " Su total a pagar es: $" + (Ranual*1.1) + 
+" Su porcentaje de renta a pagar es del 10%");
+}
+else if (Ranual >=20000 && Ranual < 35000){
+    Console.WriteLine("Su renta anual es: " + Ranual + " Su total a pagar es: $" + (Ranual*1.15) + 
+" Su porcentaje de renta a pagar es del 15%");
+}
+else if (Ranual >=35000 && Ranual < 45000){
+    Console.WriteLine("Su renta anual es: " + Ranual + " Su total a pagar es: $" + (Ranual*1.2) + 
+" Su porcentaje de renta a pagar es del 20%");
+}
+else if (Ranual >=45000){
+    Console.WriteLine("Su renta anual es: " + Ranual + " Su total a pagar es: $" + (Ranual*1.3) + 
+" Su porcentaje de renta a pagar es del 30%");
+}
+else{
+    Console.WriteLine("Usted no paga");
+}
