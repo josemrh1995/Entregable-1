@@ -1,0 +1,22 @@
+string Tpizza, Ingrediente;
+string Adiciones = "mozzarella y tomate";
+
+//Console.ReadLine();
+//Console.WriteLine();
+
+Console.WriteLine("Desea pizza vegetariana? ");
+Tpizza = Console.ReadLine();
+
+if (Tpizza == "no"){
+Console.WriteLine("Que ingrediente deseas? \nPepperoni \nSalami \nPollo ");
+Ingrediente = Console.ReadLine();
+Console.WriteLine("Su pizza No es vegetariana, a demas es del ingrediente " + Ingrediente +
+ " con adicion de " + Adiciones);
+}
+else {
+
+  Console.WriteLine("Que ingrediente deseas? \nPimiento \nChampiones");
+    Ingrediente = Console.ReadLine();
+  Console.WriteLine("Su pizza es vegetariana, a demas es del ingrediente " + Ingrediente +
+ " con adicion de " + Adiciones);  
+}
