@@ -1,0 +1,23 @@
+string Nombre;
+int Edad;
+int Entrada = 15000;
+
+//Console.ReadLine();
+//Console.WriteLine();
+
+Console.WriteLine("Dijite su nombre completo: ");
+Nombre = Console.ReadLine();
+
+Console.WriteLine("Dijite su edad:  ");
+Edad = int.Parse(Console.ReadLine());
+
+if (Edad<4){
+Console.WriteLine("Puedes entrar gratis");
+}
+else if(Edad>=4 && Edad<18){
+
+  Console.WriteLine("debes pagar " + (Entrada-(Entrada*0.05)));  
+}
+else {
+    Console.WriteLine("debes pagar " + (Entrada-(Entrada*0.03)));
+}
